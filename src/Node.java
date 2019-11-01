@@ -1,5 +1,11 @@
+/*Lauren Dube
+ * c2019 Courtney Brown 
+ * 
+ * Class: Node
+ * Description: Node object and methods to recursively form a tree
+ * 
+ */
 import java.util.ArrayList;
-
 public class Node<G> {
 	//Properties
 	ArrayList<G> tokenSequence;
@@ -45,12 +51,10 @@ public class Node<G> {
 		
 		if(num <= p && tokenSequence.size() != 0) {
 			shouldRemove = true;
-			System.out.println(tokenSequence + " :" + num);
 		}else {
 				for(int i = children.size()-1; i >= 0; i--) {
 					if(children.get(i).pMinElim(total, p)) {
 						children.remove(children.get(i));
-						System.out.println("Removed x_x");
 					}
 				}
 			shouldRemove = false;

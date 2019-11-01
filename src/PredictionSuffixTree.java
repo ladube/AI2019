@@ -1,4 +1,10 @@
-//Lauren Dube
+/*Lauren Dube
+ * c2019 Courtney Brown 
+ * 
+ * Class: PredictionSuffixTree
+ * Description: This calls class Node to build, search, and print a tree
+ * 
+ */
 import java.util.ArrayList;
 public class PredictionSuffixTree<G> extends ProbablilityGenerator<G> {
 	
