@@ -31,4 +31,8 @@ public void train() {
 public void print() {
 		root.print();
 }
+public void clearTree() {
+	root.clear();
+	root = new Node<G>();
+}
 }

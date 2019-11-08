@@ -286,12 +286,14 @@ public class HelloWorldMidiMain extends PApplet {
 		t1.train();
 		System.out.println("Abacadabra Tree:");
 		t1.print();
+		t1.clearTree();
 		String[] acadaacbda = {"a", "c", "a", "d", "a", "a", "c", "b", "d", "a"};
 		ArrayList<String> treeInput2 = new ArrayList(Arrays.asList(acadaacbda));
 		t1.setTokens(treeInput2);
 		t1.train();
 		System.out.println("Acadaacbda Tree: ");
 		t1.print();
+		t1.clearTree();
 		String[] abcccdaadcdaabcadad = {"a", "b", "c", "c", "c", "d", "a", "a", "d", "c", "d", "a", "a", "b", "c", "a", "d", "a", "d"};
 		ArrayList<String> treeInput3 = new ArrayList(Arrays.asList(abcccdaadcdaabcadad));
 		t1.setTokens(treeInput3);

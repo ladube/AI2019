@@ -75,4 +75,9 @@ public class Node<G> {
 		for(int j = 0; j < children.size(); j++) 
 			children.get(j).print(spaces + 1);
 	}
+	public void clear() {
+		tokenSequence.clear();
+		for(int i = 0; i < children.size(); i++)
+			children.get(i).clear();
+	}
 }
